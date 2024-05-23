@@ -1,0 +1,78 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+header .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 30px;
+    font-size: 24px;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header .nav .nav-item .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    border-left: 1px solid lightgray;
+    color: black;
+    text-transform: uppercase;
+}
+
+header .nav .nav-item .nav-link:hover {
+    background: lightcyan;
+}
+
+.intro {
+    border-bottom: 1px solid lightgray;
+}
+
+.intro-content {
+    width: 50%;
+    padding: 200px 30px;
+}
+
+.intro .intro-content .lead {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    box-shadow: 5px 5px 0px lightgray;
+}
+
+.btn-primary {
+    background-color: lightcyan;
+}
+
+.btn + .btn {
+    margin-left: 10px;
+}
