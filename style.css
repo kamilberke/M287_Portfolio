@@ -76,3 +76,37 @@ header .nav .nav-item .nav-link:hover {
 .btn + .btn {
     margin-left: 10px;
 }
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro-content, .intro-image {
+    width: 50%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+}
+
+.intro-image {
+    padding: 30px;
+}
+
+.intro-content {
+    padding: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .intro {
+        flex-direction: column-reverse;
+    }
+
+    .intro-content, .intro-image {
+        width: 100%;
+    }
+
+}
