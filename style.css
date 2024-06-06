@@ -99,6 +99,62 @@ header .nav .nav-item .nav-link:hover {
     padding: 30px;
 }
 
+.ueber-mich {
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ueber-mich-content {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.ueber-mich-content h2 {
+    margin-top: 0;
+}
+
+.ueber-mich-skills {
+    width: 50%;
+}
+
+.skillbar {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px lightgray;
+    position: relative;
+}
+
+.skillbar:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: var(--skill);
+    background-color: var(--color);
+}
+
+.skillbar:after {
+    content: attr(text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(var(--skill) - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
 
     .intro {
@@ -110,3 +166,4 @@ header .nav .nav-item .nav-link:hover {
     }
 
 }
+
